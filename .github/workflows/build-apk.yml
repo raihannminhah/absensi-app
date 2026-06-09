@@ -29,14 +29,7 @@ jobs:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
-      - name: Build APK with EAS
-        run: eas build --platform android --profile preview --non-interactive --local --output ./absensi-app.apk
+      - name: Build APK with EAS Cloud
+        run: eas build --platform android --profile preview --non-interactive
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
-
-      - name: Upload APK artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: absensi-app
-          path: ./absensi-app.apk
-          retention-days: 30
