@@ -3,6 +3,11 @@
     "name": "Absensi App",
     "slug": "absensi-app",
     "version": "1.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "d6e267a3-60bf-40c9-9f16-8ba505ee8af3"
+      }
+    }
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
